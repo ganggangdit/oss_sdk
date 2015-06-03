@@ -381,13 +381,16 @@ class ALIOSS{
 	/*%******************************************************************************************************%*/
 	//请求
 
-	/**
-	 * Authorization
-	 * @param array $options (Required)
-	 * @throws OSS_Exception
-	 * @author xiaobing.meng@alibaba-inc.com
-	 * @since 2012-05-31
-	 */
+    /**
+     * Authorization
+     *
+     * @param array $options (Required)
+     * @return ResponseCore
+     * @return ResponseCore
+     * @throws OSS_Exception
+     * @author xiaobing.meng@alibaba-inc.com
+     * @since  2012-05-31
+     */
 	public function auth($options){
 		//开始记录LOG
 		$msg = "---LOG START---------------------------------------------------------------------------\n";
