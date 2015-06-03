@@ -260,15 +260,17 @@ class ALIOSS{
 	/*%******************************************************************************************************%*/
 	//Constructor
 
-	/**
-	 * 默认构造函数
-	 * @param string $_access_id (Optional)
-	 * @param string $access_key (Optional)
-	 * @param string $hostname (Optional)
-	 * @throws OSS_Exception
-	 * @author	xiaobing.meng@alibaba-inc.com
-	 * @since	2011-11-08
-	 */
+    /**
+     * 默认构造函数
+     *
+     * @param null   $access_id
+     * @param string $access_key (Optional)
+     * @param string $hostname   (Optional)
+     * @throws OSS_Exception
+     * @internal  param string $_access_id (Optional)
+     * @author    xiaobing.meng@alibaba-inc.com
+     * @since     2011-11-08
+     */
 	public function __construct($access_id = NULL, $access_key = NULL, $hostname = NULL  ){
 		//验证access_id,access_key
 		if(!$access_id && !defined('OSS_ACCESS_ID')){
